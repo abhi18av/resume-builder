@@ -1,10 +1,10 @@
-(ns resume-builder.linkedin.utils
+(ns resume-builder.linkedin.resume
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]))
 
 ;; Reading from actual fields
 
-(def resume
+(def linkedin-resume
   {:causes
    (csv/read-csv (io/reader "./resources/Basic_LinkedInDataExport_12-01-2018/Causes You Care About.csv"))
 
@@ -32,3 +32,8 @@
    :skills
    (csv/read-csv (io/reader "./resources/Basic_LinkedInDataExport_12-01-2018/Skills.csv"))})
 
+
+(def best-resume-ever-schema
+
+
+  )
